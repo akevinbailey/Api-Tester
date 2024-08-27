@@ -33,5 +33,5 @@ reads the request body and closes the connection.  The usage is as follows:
 Api-Tester has the potential to make your computer unresponsive by maxing out all of its CPU cores.  This is 
 especially dangerous when running Api-Tester on a remote machine, as the remote session could be frozen until the 
 test is finished.  Be cautions when leaving `-seepTime` set to `0` and setting `-numThreads` to more than your CPU 
-cores.  Also, setting `-keepConnectsOpen` can also cause the computer run out of ports or make it unresponsive due 
+cores.  Also, setting `-keepConnectsOpen` can cause the computer run out of ports or make it unresponsive due 
 to excessive resource utilization. 
