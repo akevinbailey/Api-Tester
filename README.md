@@ -2,14 +2,16 @@
 
 **PURPOSE:**
 
-The Api-Tester is and open-source application used to test the throughput and latency of a REST service.  It currently 
-just support the GET method but the code can easily be modified to test other HTTP methods.
+Api-Tester is an open-source application used to test the throughput and latency of a REST service.  It currently 
+just supports the GET method but the code can easily be modified to test other HTTP methods.
 
 **DESCRIPTION:**
 
-Api-Tester will that a total number of calls and divide them between the given number of threads.  Each thread will 
+Api-Tester will take the total number of calls and divide them between the given number of threads.  Each thread will 
 execute its assigned number of calls in a sequential manner.  There are four versions of Api-tester.  Each version is 
-written in a different language (Go, Java, Python, and Rust), but provide the same functionality.  
+written in a different language (Go, Java, Python, and Rust), but provide the same functionality.  The only 
+exception is the Java version does not support `-keepConnectOpen`, because the HttpClient class automatically
+reads the request body and closes the connection.  The usage is as follows:
 
 	Usage:
 	api-tester [URL] [arguments]
@@ -25,9 +27,6 @@ written in a different language (Go, Java, Python, and Rust), but provide the sa
 	  -keepConnectsOpen       - Force a new connection with every request (not advised).
 	Help:
 	  -? or --help - Display this help message.
-
-The only exception is the Java version does not support `-keepConnectOpen`, because the HttpClient class automatically 
-reads the request body and closes the connection.
 
 **WARNING:**
 
