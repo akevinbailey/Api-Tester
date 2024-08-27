@@ -1,3 +1,0 @@
-[submodule "go/Api-Tester"]
-	path = go/Api-Tester
-	url = https://github.com/akevinbailey/Api-Tester-Go.git
