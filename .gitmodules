@@ -1,0 +1,12 @@
+[submodule "go/Api-Tester"]
+	path = go/Api-Tester
+	url = https://github.com/akevinbailey/Api-Tester-Go.git
+[submodule "java/Api-Tester"]
+	path = java/Api-Tester
+	url = https://github.com/akevinbailey/Api-Tester-Java.git
+[submodule "rust/Api-Tester"]
+	path = rust/Api-Tester
+	url = https://github.com/akevinbailey/Api-Tester-Rust.git
+[submodule "python/Api-Tester"]
+	path = python/Api-Tester
+	url = https://github.com/akevinbailey/Api-Tester-Python.git
