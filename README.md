@@ -26,7 +26,7 @@ written in a different language (Go, Java, Python, and Rust), but provide the sa
 	Help:
 	  -? or --help - Display this help message.
 
-The only exception is the Java version does not support -keepConnectOpen, because the HttpClient class automatically 
+The only exception is the Java version does not support `-keepConnectOpen`, because the HttpClient class automatically 
 reads the request body and closes the connection.
 
 **WARNING:**
