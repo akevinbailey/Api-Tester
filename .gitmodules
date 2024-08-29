@@ -10,3 +10,6 @@
 [submodule "python/Api-Tester"]
 	path = python/Api-Tester
 	url = https://github.com/akevinbailey/Api-Tester-Python.git
+[submodule "c/Api-Tester"]
+	path = c/Api-Tester
+	url = https://github.com/akevinbailey/Api-Tester-C.git
