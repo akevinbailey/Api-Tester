@@ -26,7 +26,7 @@ reads the request body, and reuses or closes the connection.  The usage is as fo
 	  -reuseConnects          - Attempts to reuse the connections if the server allows it.
 	  -keepConnectsOpen       - Force a new connection with every request (not advised).
 	Help:
-	  -? or --help - Display this help message.
+	  -? or --help            - Display this help message.
 
 **WARNING:**
 
