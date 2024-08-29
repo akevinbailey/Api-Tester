@@ -2,16 +2,16 @@
 
 **PURPOSE:**
 
-Api-Tester is an open-source application used to test the throughput and latency of a REST service.  It currently 
+Api-Tester is an open-source application used to test the throughput and latency of a REST service.  It currently
 just supports the GET method but the code can easily be modified to test other HTTP methods.
 
 **DESCRIPTION:**
 
-Api-Tester will take the total number of calls and divide them between the given number of threads.  Each thread will 
-execute its assigned number of calls in a sequential manner.  There are four versions of Api-tester.  Each version is 
-written in a different language (Go, Java, Python, and Rust), but provide the same functionality.  The only 
+Api-Tester will take the total number of calls and divide them between the given number of threads.  Each thread will
+execute its assigned number of calls in a sequential manner.  There are four versions of Api-tester.  Each version is
+written in a different language (C, Go, Java, Python, and Rust), but provide the same functionality.  The only
 exception is the Java version does not support `-keepConnectOpen`, because the HttpClient class automatically
-reads the request body and closes the connection.  The usage is as follows:
+reads the request body, and reuses or closes the connection.  The usage is as follows:
 
 	Usage:
 	api-tester [URL] [arguments]
@@ -30,8 +30,8 @@ reads the request body and closes the connection.  The usage is as follows:
 
 **WARNING:**
 
-Api-Tester has the potential to make your computer unresponsive by maxing out all of its CPU cores.  This is 
-especially dangerous when running Api-Tester on a remote machine, as the remote session could be frozen until the 
-test is finished.  Be cautions when leaving `-seepTime` set to `0` and setting `-numThreads` to more than your CPU 
-cores.  Also, setting `-keepConnectsOpen` can cause the computer run out of ports or make it unresponsive due 
+Api-Tester has the potential to make your computer unresponsive by maxing out all of its CPU cores.  This is
+especially dangerous when running Api-Tester on a remote machine, as the remote session could be frozen until the
+test is finished.  Be cautions when leaving `-seepTime` set to `0` and setting `-numThreads` to more than your CPU
+cores.  Also, setting `-keepConnectsOpen` can cause the computer run out of ports or make it unresponsive due
 to excessive resource utilization.
