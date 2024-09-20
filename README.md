@@ -8,7 +8,7 @@ just supports the GET method but the code can easily be modified to test other H
 **DESCRIPTION:**
 
 Api-Tester will take the total number of calls and divide them between the given number of threads.  Each thread will
-execute its assigned number of calls in a sequential manner.  There are four versions of Api-tester.  Each version is
+execute its assigned number of calls in a sequential manner.  There are five versions of Api-tester.  Each version is
 written in a different language (C, Go, Java, Python, and Rust), but provide the same functionality.  The only
 exception is the Java version does not support `-keepConnectOpen`, because the HttpClient class automatically
 reads the request body, and reuses or closes the connection.  The usage is as follows:
