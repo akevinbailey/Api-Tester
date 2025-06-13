@@ -22,7 +22,7 @@ reads the request body, and reuses or closes the connection.  The usage is as fo
 	  -numThreads [value]     - Number of threads. Default is 12.
 	  -sleepTime [value]      - Sleep time in milliseconds between calls within a thread. Default is 0.
 	  -requestTimeOut [value] - HTTP request timeout in milliseconds. Default is 10000.
-	  -connectTimeOut [value] - HTTP request timeout in milliseconds. Default is 20000.
+	  -connectTimeOut [value] - HTTP connect timeout in milliseconds. Default is 20000.
 	  -reuseConnects          - Attempts to reuse the connections if the server allows it.
 	  -keepConnectsOpen       - Force a new connection with every request (not advised).
 	Help:
